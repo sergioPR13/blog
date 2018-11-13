@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <header>
+      <nav class="be-red white large-padding">
+        <ul class="no-list row center-xs">
+          <li class="col-md">
+            <%= link_to "Inicio", root_path%>
+          </li>
+          <li class="col-md">
+            Planassze
+          </li>
+          <li class="col-md">
+            Brissza
+          </li>
+          <li class="col-md">
+            Prossam
+          </li>
+          <li class="col-md">
+            Peraj
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
