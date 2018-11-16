@@ -8,25 +8,29 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
   </head>
   <body>
     <header>
       <nav class="be-red white large-padding">
-        <ul class="no-list row center-xs">
+        <ul class="no-list row center-xs middle-xs">
+          <li class="col-md">
+            <h1 class="no-margin" id="logo">IPN DESS</h1>
+          </li>
           <li class="col-md">
             <%= link_to "Inicio", root_path%>
           </li>
           <li class="col-md">
-            Planassze
+            <%= link_to "Planassze", root_path%>
           </li>
           <li class="col-md">
-            Brissza
+            <%= link_to "Brissza", root_path%>
           </li>
           <li class="col-md">
-            Prossam
+            <%= link_to "Prossam", root_path%>
           </li>
           <li class="col-md">
-            Peraj
+            <%= link_to "Peraj", root_path%>
           </li>
         </ul>
       </nav>
