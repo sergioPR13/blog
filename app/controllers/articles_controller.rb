@@ -26,7 +26,7 @@ class ArticlesController < ApplicationController
     def create
         #INSERT INTO
         #@article=Article.new(title: params[:article][:title], body: params[:article][:body])
-        @article=Article.new(article_params) # Ver PRIVATE
+        @article=current_user.articles.new(article_params) # Ver PRIVATE
         if @article.save
             redirect_to @article
         else
