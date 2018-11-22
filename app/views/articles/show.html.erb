@@ -4,12 +4,17 @@
     Escrito por: <%= @article.user.email%>
 </p>
 <%end%>
+<div class="field">
+    <%= image_tag @article.cover.url(:thumb) %>
+</div>
 <p>
     Visitas: <%= @article.visit_count%>
 </p>
 <div>
     <%= @article.body%>
 </div>
+<!-- este es un comentario  html -->
+<%# este es un comentario de ruby %>
 <div class="field">
     <h3>Comentarios</h3>
     <%= render "comments/form" %>
