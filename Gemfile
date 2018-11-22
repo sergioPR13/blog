@@ -27,6 +27,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 
 gem 'awesome_rails_console'
+
+gem 'jquery-turbolinks'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
