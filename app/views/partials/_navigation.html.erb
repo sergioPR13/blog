@@ -1,36 +1,29 @@
 <header>
-<nav class="be-red white large-padding">
-  <ul class="no-list row center-xs middle-xs">
-    <li class="col-md">
-      <h1 class="no-margin" id="logo">IPN DESS</h1>
-    </li>
-    <li class="col-md">
-      <%= link_to "Inicio", root_path%>
-    </li>
-    <li class="col-md">
-      <%= link_to "Planassze", root_path%>
-    </li>
-    <li class="col-md">
-      <%= link_to "Brissza", root_path%>
-    </li>
-    <li class="col-md">
-      <%= link_to "Prossam", root_path%>
-    </li>
-    <li class="col-md">
-      <%= link_to "Peraj", root_path%>
-    </li>
-    <% if user_signed_in? %>
-    <li class="col-md">
-        <%= link_to "cerrar sesión", destroy_user_session_path, method: :delete %>
-    </li>
-    <% else %>
-    <li class="col-md">
+  <nav class="be-red white large-padding">
+    <ul class="no-list row center-xs middle-xs">
+      <li class="col-md">
+        <h1 class="no-margin" id="logo"><%= link_to "IPN DESS", root_path%></h1>
+      </li>
+      <li class="col-md">
+        <%= link_to "Artículos", articles_path%>
+      </li>
+      <% @categories.each do |category| %>
+        <li class="col-md">
+          <%= link_to category.name, category%>
+        </li>
+      <%end%>
+      <% if user_signed_in? %>
+        <li class="col-md">
+          <%= link_to "cerrar sesión", destroy_user_session_path, method: :delete %>
+        </li>
+      <% else %>
+      <li class="col-md">
         <%= link_to "Iniciar sesión", new_user_session_path %>
-    </li>
-    <li class="col-md">
+      </li>
+      <li class="col-md">
         <%= link_to "Crear cuenta", new_user_registration_path %>
-    </li>
-    <%end%>
-  </ul>
-</nav>
+      </li>
+      <%end%>
+    </ul>
+  </nav>
 </header>
