@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_23_173630) do
+ActiveRecord::Schema.define(version: 2018_11_27_182159) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(version: 2018_11_23_173630) do
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
     t.string "name"
-    t.string "permission_level"
+    t.integer "permission_level", default: 1
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true

@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
     before_action :authenticate_user!, except: [:show,:index]
     before_action :set_article, except: [:index,:new,:create]
+    before_action :authenticate_editor!, only: [:new,:create,:update]
+    before_action :authenticate_admin!, only: [:destroy]
     
     #GET /articles
     def index
@@ -37,9 +39,10 @@ class ArticlesController < ApplicationController
     end
   
     # DELETE /articles/:id
+    #Destroy elimina el objeto de la BD
     def destroy
         #DELETE FROM articles
-        @article.destroy #Destroy elimina el objeto de la BD
+        @article.destroy
         redirect_to articles_path
     end
     
