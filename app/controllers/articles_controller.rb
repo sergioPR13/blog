@@ -7,7 +7,8 @@ class ArticlesController < ApplicationController
     #GET /articles
     def index
         #Obtiene todos los registros de la base de datos (BD) Article (SELECT * FROM)
-        @articles = Article.publicados.ultimos
+        # se muestran solo los ultimos 3 articulos por pagina
+        @articles = Article.paginate(page: params[:page],per_page:3).publicados.ultimos
     end
     
     #GET /articles/:id

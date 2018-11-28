@@ -27,14 +27,12 @@ gem 'jbuilder', '~> 2.5'
 
 #gemas del tutorial
 gem 'devise'
-
 gem 'awesome_rails_console'
-
 gem 'jquery-turbolinks'
-
 gem "paperclip", "~> 6.0.0"
-
 gem 'aasm'
+gem 'will_paginate'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
