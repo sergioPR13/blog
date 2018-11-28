@@ -33,6 +33,8 @@ gem 'awesome_rails_console'
 gem 'jquery-turbolinks'
 
 gem "paperclip", "~> 6.0.0"
+
+gem 'aasm'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

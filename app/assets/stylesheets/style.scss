@@ -13,6 +13,14 @@ html,body{
     padding: 10px 12px;
 }
 
+.red{
+    color: rgb(255, 0, 0);
+}
+
+.blue{
+    color: rgb(0, 23, 124);
+}
+
 a,a:visited{
     color: inherit !important;
     text-decoration: none;
@@ -24,10 +32,6 @@ a,a:visited{
 
 .no-margin{
     margin: 0px;
-}
-
-.red{
-    color: rgb(255, 0, 0);
 }
 
 .be-red{

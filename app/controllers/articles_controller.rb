@@ -2,12 +2,12 @@ class ArticlesController < ApplicationController
     before_action :authenticate_user!, except: [:show,:index]
     before_action :set_article, except: [:index,:new,:create]
     before_action :authenticate_editor!, only: [:new,:create,:update]
-    before_action :authenticate_admin!, only: [:destroy]
+    before_action :authenticate_admin!, only: [:destroy,:publish]
     
     #GET /articles
     def index
         #Obtiene todos los registros de la base de datos (BD) Article (SELECT * FROM)
-        @articles = Article.all
+        @articles = Article.publicados.ultimos
     end
     
     #GET /articles/:id
@@ -53,6 +53,12 @@ class ArticlesController < ApplicationController
         else 
             render :edit
         end
+    end
+
+    def publish
+        @article.publish!
+        redirect_to @article
+
     end
 
     private
