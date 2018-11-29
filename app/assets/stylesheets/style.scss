@@ -48,8 +48,31 @@ a,a:visited{
     margin-top: 1em;
 }
 
+.background-cover{
+    background-position: center;
+    background-size: cover;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
 .text-left{
     text-align: left;
+}
+.article-height{
+    height:100px;
+}
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
 }
 
 .form-control{

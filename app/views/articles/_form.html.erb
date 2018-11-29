@@ -14,7 +14,8 @@
     </div>
 
     <div class="field">
-        <%= f.text_field :body, placeholder: "Escribe aquí el título", style:"height:250px;", class:"form-control" %>
+        <%= f.hidden_field :body, placeholder: "Escribe aquí el texto", style:"height:250px;", class:"form-control" %>
+        <trix-editor input="article_body"></trix-editor>
     </div>
     <div class="field">
         <label> Categorías </label>

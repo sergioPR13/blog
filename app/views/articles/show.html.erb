@@ -18,7 +18,7 @@
     Visitas: <%= @article.visit_count%>
 </p>
 <div>
-    <%= @article.body%>
+    <%= sanitize @article.body.html_safe%>
 </div>
 <!-- este es un comentario  html -->
 <%# este es un comentario de ruby %>
