@@ -33,6 +33,7 @@ gem "paperclip", "~> 6.0.0"
 gem 'aasm'
 gem 'will_paginate'
 gem 'trix'
+gem "sanitize"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

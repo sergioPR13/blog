@@ -13,12 +13,36 @@ html,body{
     padding: 10px 12px;
 }
 
+.light-border{
+    border: lightgoldenrodyellow;
+}
+
+.be-big{
+    font-size: 2em;
+}
+
+.be-small{
+    font-size: 12px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
 .red{
     color: rgb(255, 0, 0);
 }
 
-.blue{
-    color: rgb(0, 23, 124);
+.cherry{
+    color: rgb(149,47,87);
+}
+
+.grey{
+    color: rgb(58, 58, 58);
+}
+
+.text-justify{
+    text-align: justify;
 }
 
 a,a:visited{
@@ -37,7 +61,8 @@ a,a:visited{
 .be-red{
     background-color: rgb(149,47,87);
     }
-    .white{color:white;
+.white{
+    color:white;
     }
 
 .large-padding{
@@ -45,7 +70,11 @@ a,a:visited{
     }
 
 .field, .top-space, .actions{
-    margin-top: 1em;
+    margin-top: 2em;
+}
+
+.hidden{
+    display: none !important;
 }
 
 .background-cover{
@@ -85,3 +114,6 @@ a,a:visited{
     font-size: 1.2em;
 }
 
+.bottom-space{
+    margin-bottom: 2em;
+}

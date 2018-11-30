@@ -127,6 +127,8 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
+    nokogumbo (2.0.1)
+      nokogiri (~> 1.8, >= 1.8.4)
     orm_adapter (0.5.0)
     paperclip (6.0.0)
       activemodel (>= 4.2.0)
@@ -177,6 +179,10 @@ GEM
       railties (>= 4.2.0, < 5.3)
     ruby_dep (1.5.0)
     rubyzip (1.2.2)
+    sanitize (5.0.0)
+      crass (~> 1.0.2)
+      nokogiri (>= 1.8.0)
+      nokogumbo (~> 2.0)
     sass (3.7.2)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -250,6 +256,7 @@ DEPENDENCIES
   paperclip (~> 6.0.0)
   puma (~> 3.11)
   rails (~> 5.2.1)
+  sanitize
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
