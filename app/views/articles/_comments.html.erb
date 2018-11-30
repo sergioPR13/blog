@@ -7,10 +7,10 @@
             <%= @article.comments.count %>
             Comentario(s)
         </div>
-        <div>
+        <div clas="col-md-12">
             <%= render "comments/form" %>
         </div>
-        <div class="top-space">
+        <div class="top-space col-md-12">
             <%= render @article.comments %>
         </div>
     </div>
